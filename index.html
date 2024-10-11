@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Momentum App</h1>
+        <div id="time"></div>
+
+        <div class="input-section">
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="displayGreeting()">Submit Name</button>
+        </div>
+
+        <div id="greeting"></div>
+
+        <div class="focus-section">
+            <input type="text" id="focusInput" placeholder="Enter your focus for today">
+            <button onclick="displayFocus()">Submit Focus</button>
+        </div>
+
+        <div id="focusDisplay"></div>
+
+        <div id="quoteSection">
+            <p id="quote"></p>
+            <input type="text" id="newQuoteInput" placeholder="Add a new quote">
+            <button onclick="addNewQuote()">Add Quote</button>
+        </div>
+
+        <div class="todo-section">
+            <h3>Todo List</h3>
+            <input type="text" id="todoInput" placeholder="Add a todo">
+            <button onclick="addTodo()">Add</button>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
